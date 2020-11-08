@@ -1,0 +1,22 @@
+name: 'ChronoPay'
+version: 'KT-1.0'
+description: 'Reward players for online time.'
+author: 'Syndek'
+
+main: 'dev.syndek.chronopay.ChronoPayPlugin'
+depend: ['Vault']
+softdepend: ['Essentials']
+api-version: '1.16'
+
+commands:
+  cpreload:
+    description: 'Reloads the plugin configuration.'
+
+permissions:
+  chronopay.*:
+    chronopay.reload: true
+    chronopay.bypass.*: true
+  chronopay.bypass.*:
+    chronopay.bypass.cap: true
+    chronopay.bypass.afk: true
+    chronopay.bypass.address: true
